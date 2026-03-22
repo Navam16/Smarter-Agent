@@ -1,0 +1,23 @@
+# Secrets
+.env
+*.env
+
+# Database (local SQLite — don't push to GitHub)
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+venv/
+.venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
