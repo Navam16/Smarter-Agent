@@ -639,7 +639,8 @@ elif page == "👥 Candidates":
         src_icon = "🐙" if c["source"] == "GitHub" else "🌐"
         stat_cls = f"status-{c.get('status', 'new')}"
 
-        with st.expander(f"**{c['name']}** — {c.get('role', '—')} {f'· {c[\"company\"]}' if c.get('company') else ''}", expanded=False):
+        company_str = f"· {c['company']}" if c.get('company') else ''
+with st.expander(f"**{c['name']}** — {c.get('role', '—')} {company_str}", expanded=False):
             col1, col2, col3 = st.columns([2, 2, 1])
 
             with col1:
